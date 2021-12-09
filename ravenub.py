@@ -21,6 +21,7 @@ Mai = Client(
     bot_token=config.BOT_TOKEN,
 )
 
+OwnerId = config.ownerid
 
 owner_id = [1871813121]
 
@@ -35,10 +36,10 @@ async def ping (client , message):
         chat_id = message.chat.id
         await message.edit("pong: " + str(random.randint(10 , 100)) + "ms")
         
-BOT_VERSION = "0.2"
+BOT_VERSION = "0.1"
 alive_msg = f"""
 
-**WEEB USERBOT is Alive & Running**
+**CHIZURU USERBOT is Alive & Running**
     
     **Python Version:** `{python_version}`
     **Pyrogram Version:** `{pyro_version}`
