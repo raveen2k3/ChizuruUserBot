@@ -4,3 +4,4 @@ wget
 pySmartDL==1.3.4
 tgcrypto
 psutil
+asyncio
