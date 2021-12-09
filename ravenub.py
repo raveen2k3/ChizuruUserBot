@@ -21,9 +21,8 @@ Mai = Client(
     bot_token=config.BOT_TOKEN,
 )
 
-OwnerId = config.OwnerId
 
-owner_id = [1871813121]
+owner_id = config.OwnerId
 
 prefixes=["." , "!"]
 
@@ -55,7 +54,7 @@ async def alive (client , message):
         chat_id = message.chat.id
         #picyy = await Mai.get_profile_photos(user_id, limit=1)
         #pic = await Mai.download_media(picyy)
-        pic = f"/home/raveen/Desktop/programming/private-main/RavenUserBot/components/kaguya.jpg"
+        pic = f"./stuffs/chizuru.jpg"
         await Mai.delete_messages(chat_id , message.message_id)
         await Mai.send_photo(chat_id , photo= pic , caption= alive_msg)
         
@@ -71,7 +70,7 @@ async def anime (client , message):
         await Mai.delete_messages(chat_id , message.message_id)
         #await message.reply(data['url'])
         url = data['url']
-        desti = f"/home/raveen/Desktop/programming/private-main/RavenUserBot/dlstuffs"
+        desti = f"./stuffs/"
         obj = SmartDL(url, desti)
         obj.start()
         filename = path = obj.get_dest()
@@ -129,7 +128,7 @@ async def cat(client , message):
             await message.edit("Searching For your cat")
             url =f"https://http.cat/{catty}.jpg"
             print(url)
-            desti = f"/home/raveen/Desktop/programming/private-main/RavenUserBot/dlstuffs"
+            desti = f"./stuffs/
             obj = SmartDL(url, desti)
             obj.start()
             filename = path = obj.get_dest()
