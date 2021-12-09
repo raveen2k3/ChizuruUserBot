@@ -21,7 +21,7 @@ Mai = Client(
     bot_token=config.BOT_TOKEN,
 )
 
-OwnerId = config.ownerid
+OwnerId = config.OwnerId
 
 owner_id = [1871813121]
 
