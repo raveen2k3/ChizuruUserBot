@@ -1,0 +1,8 @@
+{
+    "name": "chizuruUserBot",
+    "description": "A Telegram userbot simplifies works",
+    "repository": "https://github.com/raveen2k3/ChizuruUserBot",
+    "logo": "https://i.redd.it/v75t68xjxmi51.jpg",
+    "keywords": ["telegram", "python", "bot"]
+    
+  }
